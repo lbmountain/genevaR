@@ -1,0 +1,11 @@
+Package: genevaR
+Type: Package
+Title: Visualize gene structure and mark variants
+Version: 0.1.0
+Year: 2021
+Author: Lea Berg
+Maintainer: Lea Berg <miss.lb.mountain@gmail.com>
+Description: Plot gene with structure elements(exons, UTRs) and add positional information about different variants.
+License: GPL-2
+LazyData: true
+RoxygenNote: 7.1.1.9001
