@@ -4,22 +4,26 @@
 \alias{genevaR}
 \title{Gene and Variants Plot}
 \usage{
-genevaR(gff_file, gene_name, vcf_file = NULL)
+genevaR(gff_file, gene_name, vcf_file = NULL, genotypes = FALSE)
 }
 \arguments{
 \item{gff_file}{Data frame including columns "seqid", "start", "end", "type" and "ID".}
 
 \item{gene_name}{ID of the gene of interest. Should be the same for the GFF and VCF input.}
 
-\item{vcf_file}{.txt file including columns "POS", "ANN....GENEID" (gene ID) and "ANN....EFFECT" (variant type). SnpSift-filtered VCF file.}
+\item{vcf_file}{data frame including columns "POS", "ANN....GENEID", "ANN....EFFECT" and optionally "Genotype". SnpSift-filtered VCF file.}
+
+\item{genotypes}{if 'TRUE', will use 'Genotype' column of 'vcf_file' to split variants of different genotypes.}
 }
 \description{
 Creates a plot that visualizes the selected gene and optionally marks variant positions.
 }
 \keyword{exons}
 \keyword{gene}
+\keyword{genotype}
 \keyword{gff}
 \keyword{plot}
+\keyword{snpeff}
 \keyword{snpsift}
 \keyword{variants}
 \keyword{vcf}
