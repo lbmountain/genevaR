@@ -4,16 +4,18 @@
 \alias{genevaR}
 \title{Gene and Variants Plot}
 \usage{
-genevaR(gff_file, gene_name, vcf_file = NULL, genotypes = FALSE)
+genevaR(gff_file, gene_name, vcf_file = NULL, plot_title = gene_name, facets)
 }
 \arguments{
 \item{gff_file}{Data frame including columns "seqid", "start", "end", "type" and "ID".}
 
 \item{gene_name}{ID of the gene of interest. Should be the same for the GFF and VCF input.}
 
-\item{vcf_file}{data frame including columns "POS", "ANN....GENEID", "ANN....EFFECT" and optionally "Genotype". SnpSift-filtered VCF file.}
+\item{vcf_file}{Data frame including columns "POS", "ANN....GENEID", "ANN....EFFECT" and optionally "Genotype". SnpSift-filtered VCF file.}
 
-\item{genotypes}{if 'TRUE', will use 'Genotype' column of 'vcf_file' to split variants of different genotypes.}
+\item{plot_title}{Customize plot title. Default is set to input of gene_name.}
+
+\item{facets}{Split plot into facets. Set to 'variants' or 'genotype' (this requires column "Genotype").}
 }
 \description{
 Creates a plot that visualizes the selected gene and optionally marks variant positions.
