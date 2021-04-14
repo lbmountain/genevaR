@@ -1,8 +1,3 @@
----
-title: "README genevaR"
-output: html_document
----
-
 ### Description
 
 Plot a gene of interest with structure elements (exons and UTRs) and optionally add the positions of variants.
